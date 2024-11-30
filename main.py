@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 
 st.title("Weather Forecast for the Next Days")
-place = st.text_input("Place: ")
+place = st.text_input("Place: ",help="Enter city name")
 days = st.slider("Forecast Days", min_value=1, max_value=5,
                  help="Select the number of forecasted days")
 option = st.selectbox("Select data to view",
